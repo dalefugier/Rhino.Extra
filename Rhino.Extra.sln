@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Extra", "Rhino.Extra\Rhino.Extra.csproj", "{C1FAD505-B561-44CC-92D7-9CE335446691}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50289133-3D43-4031-B217-1AD044612C6F} = {50289133-3D43-4031-B217-1AD044612C6F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RhinoExtraLib", "RhinoExtraLib\RhinoExtraLib.vcxproj", "{50289133-3D43-4031-B217-1AD044612C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRhinoExtra", "TestRhinoExtra\TestRhinoExtra.csproj", "{BF89918B-B409-4133-8671-D177F3BBE5CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1FAD505-B561-44CC-92D7-9CE335446691}.Debug|x64.ActiveCfg = Debug|x64
+		{C1FAD505-B561-44CC-92D7-9CE335446691}.Debug|x64.Build.0 = Debug|x64
+		{C1FAD505-B561-44CC-92D7-9CE335446691}.Release|x64.ActiveCfg = Release|x64
+		{C1FAD505-B561-44CC-92D7-9CE335446691}.Release|x64.Build.0 = Release|x64
+		{50289133-3D43-4031-B217-1AD044612C6F}.Debug|x64.ActiveCfg = Debug|x64
+		{50289133-3D43-4031-B217-1AD044612C6F}.Debug|x64.Build.0 = Debug|x64
+		{50289133-3D43-4031-B217-1AD044612C6F}.Release|x64.ActiveCfg = Release|x64
+		{50289133-3D43-4031-B217-1AD044612C6F}.Release|x64.Build.0 = Release|x64
+		{BF89918B-B409-4133-8671-D177F3BBE5CC}.Debug|x64.ActiveCfg = Debug|x64
+		{BF89918B-B409-4133-8671-D177F3BBE5CC}.Debug|x64.Build.0 = Debug|x64
+		{BF89918B-B409-4133-8671-D177F3BBE5CC}.Release|x64.ActiveCfg = Release|x64
+		{BF89918B-B409-4133-8671-D177F3BBE5CC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
