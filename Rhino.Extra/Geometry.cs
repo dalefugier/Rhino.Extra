@@ -39,9 +39,6 @@ namespace Rhino.Extra
       if (null == brep0 || null == brep1)
         return null;
 
-      var const_ptr_brep0 = Interop.NativeGeometryConstPointer(brep0);
-      var const_ptr_brep1 = Interop.NativeGeometryConstPointer(brep1);
-
       return MergeSurfaces(brep0, brep1, Point2d.Unset, Point2d.Unset, 1.0, true, RhinoMath.UnsetValue);
     }
 
