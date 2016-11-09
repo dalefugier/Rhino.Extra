@@ -1,6 +1,5 @@
 ﻿using Rhino;
 using Rhino.Commands;
-using Rhino.Extra;
 
 namespace TestRhinoExtra
 {
@@ -14,7 +13,7 @@ namespace TestRhinoExtra
 
     protected override Result RunCommand(RhinoDoc doc, RunMode mode)
     {
-      var serial_nos = Worksession.SerialNumbers();
+      var serial_nos = Rhino.Extra.Worksession.SerialNumbers();
       if (0 == serial_nos.Length)
         return Result.Nothing;
 
@@ -22,13 +21,13 @@ namespace TestRhinoExtra
       {
         RhinoApp.WriteLine("Worksession serial number = {0}", sn);
 
-        var filename = Worksession.FileName(sn);
+        var filename = Rhino.Extra.Worksession.FileName(sn);
         RhinoApp.WriteLine("Filename = {0}", filename);
 
-        var model_count = Worksession.ModelCount(sn);
+        var model_count = Rhino.Extra.Worksession.ModelCount(sn);
         RhinoApp.WriteLine("Model count = {0}", model_count);
 
-        var model_names = Worksession.ModelNames(sn);
+        var model_names = Rhino.Extra.Worksession.ModelNames(sn);
         var count = 1;
         foreach (var name in model_names)
           RhinoApp.WriteLine("Model {0} = {1}", count++, name);
