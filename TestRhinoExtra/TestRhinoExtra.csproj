@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestMergeSurfaceCommand.cs" />
     <Compile Include="TestRhinoExtraCommand.cs" />
     <Compile Include="TestRhinoExtraPlugIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

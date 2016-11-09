@@ -27,3 +27,13 @@ public:
 private:
   ON_wString m_string;
 };
+
+struct ON_3DPOINT_STRUCT
+{ 
+  double val[3]; 
+};
+
+struct ON_2DPOINT_STRUCT
+{ 
+  double val[2]; 
+};

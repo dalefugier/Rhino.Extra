@@ -4,7 +4,7 @@ namespace Rhino.Extra
   /// <summary>
   /// Class represents a Rhino Worksession
   /// </summary>
-  public class Worksession
+  public static class Worksession
   {
     /// <summary>
     /// Returns the runtime serial numbers of the active worksessions.

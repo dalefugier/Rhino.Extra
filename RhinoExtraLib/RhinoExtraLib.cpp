@@ -143,3 +143,17 @@ RH_C_FUNCTION int CRhinoWorkSession_ModelAliases(unsigned int serialno, ON_Class
     rc = CRhinoWorkSession::ModelAliases(serialno, *pStrings);
   return rc;
 }
+
+RH_C_FUNCTION ON_Brep* RHC_RhinoMergeSrf(const ON_Brep* pConstBrep0, const ON_Brep* pConstBrep1, ON_2DPOINT_STRUCT pick_point0, ON_2DPOINT_STRUCT pick_point1, double roundness, bool smooth, double tolerance)
+{
+  ON_Brep* rc = nullptr;
+  if (nullptr != pConstBrep0 && nullptr != pConstBrep1)
+  {
+    ON_2dPoint _pick_point0(pick_point0.val);
+    ON_2dPoint _pick_point1(pick_point1.val);
+    const ON_2dPoint* pPickPoint0 = _pick_point0.IsUnsetPoint() ? nullptr : &_pick_point0;
+    const ON_2dPoint* pPickPoint1 = _pick_point1.IsUnsetPoint() ? nullptr : &_pick_point1;
+    rc = RhinoMergeSrf(pConstBrep0, pConstBrep1, pPickPoint0, pPickPoint1, roundness, smooth, tolerance);
+  }
+  return rc;
+}
