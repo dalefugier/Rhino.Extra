@@ -144,6 +144,8 @@ RH_C_FUNCTION int CRhinoWorkSession_ModelAliases(unsigned int serialno, ON_Class
   return rc;
 }
 
+// Geometry interfaces
+
 RH_C_FUNCTION ON_Brep* RHC_RhinoMergeSrf(const ON_Brep* pConstBrep0, const ON_Brep* pConstBrep1, ON_2DPOINT_STRUCT pick_point0, ON_2DPOINT_STRUCT pick_point1, double roundness, bool smooth, double tolerance)
 {
   ON_Brep* rc = nullptr;
@@ -157,3 +159,11 @@ RH_C_FUNCTION ON_Brep* RHC_RhinoMergeSrf(const ON_Brep* pConstBrep0, const ON_Br
   }
   return rc;
 }
+
+RH_C_FUNCTION bool RHC_RhinoRepairBrep(ON_Brep* pBrep, double tolerance)
+{
+  if (nullptr != pBrep)
+    return RhinoRepairBrep(pBrep, tolerance);
+  return false;
+}
+

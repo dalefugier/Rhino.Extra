@@ -65,8 +65,13 @@ namespace Rhino.Extra
     [DllImport("RhinoExtraLib.dll", CallingConvention = CallingConvention.Cdecl)]
     internal static extern int CRhinoWorkSession_ModelAliases(uint serialno, IntPtr ptrStrings);
 
-    // Brep interface
+    // Geometry interface
+
     [DllImport("RhinoExtraLib.dll", CallingConvention = CallingConvention.Cdecl)]
     internal static extern IntPtr RHC_RhinoMergeSrf(IntPtr pConstBrep0, IntPtr pConstBrep1, Point2d pickPoint0, Point2d pickPoint1, double roundness, [MarshalAs(UnmanagedType.U1)]bool smooth, double tolerance);
+
+    [DllImport("RhinoExtraLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    [return: MarshalAs(UnmanagedType.U1)]
+    internal static extern bool RHC_RhinoRepairBrep(IntPtr pBrep, double tolerance);
   }
 }

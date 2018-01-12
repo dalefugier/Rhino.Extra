@@ -48,10 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Geometry.cs" />
-    <Compile Include="OnStringArray.cs" />
-    <Compile Include="OnUintArray.cs" />
+    <Compile Include="Interop\OnStringArray.cs" />
+    <Compile Include="Interop\OnUintArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OnString.cs" />
+    <Compile Include="Interop\OnString.cs" />
     <Compile Include="UnsafeNativeMethods.cs" />
     <Compile Include="Worksession.cs" />
   </ItemGroup>

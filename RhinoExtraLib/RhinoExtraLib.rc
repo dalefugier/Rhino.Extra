@@ -81,7 +81,7 @@ BEGIN
             VALUE "FileDescription", "RhinoExtraLib"
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "RhinoExtraLib.rhp"
-            VALUE "LegalCopyright", "Copyright © 2016, Robert McNeel & Associates"
+            VALUE "LegalCopyright", "Copyright © 2016-18, Robert McNeel & Associates"
             VALUE "OriginalFilename", "RhinoExtraLib.rhp"
             VALUE "ProductName", "RhinoExtraLib"
             VALUE "ProductVersion", "1.0.0.0"

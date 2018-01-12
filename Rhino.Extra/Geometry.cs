@@ -1,5 +1,4 @@
 ﻿using Rhino.Geometry;
-using Rhino.Runtime;
 
 namespace Rhino.Extra
 {
@@ -59,11 +58,25 @@ namespace Rhino.Extra
       if (null == brep0 || null == brep1)
         return null;
 
-      var const_ptr_brep0 = Interop.NativeGeometryConstPointer(brep0);
-      var const_ptr_brep1 = Interop.NativeGeometryConstPointer(brep1);
+      var const_ptr_brep0 = Runtime.Interop.NativeGeometryConstPointer(brep0);
+      var const_ptr_brep1 = Runtime.Interop.NativeGeometryConstPointer(brep1);
 
       var ptr_brep = UnsafeNativeMethods.RHC_RhinoMergeSrf(const_ptr_brep0, const_ptr_brep1, point0, point1, roundness, smooth, tolerance);
-      return Interop.CreateFromNativePointer(ptr_brep) as Brep;
+      return Runtime.Interop.CreateFromNativePointer(ptr_brep) as Brep;
+    }
+
+    /// <summary>
+    /// Fills in missing or fixes incorrect component information in a Brep. 
+    /// Useful when reading Brep information from other file formats that do not 
+    /// provide as complete of a Brep definition as requried by Rhino.
+    /// </summary>
+    /// <param name="brep">The Brep to repair.</param>
+    /// <param name="tolerance">The repair tolerance. When in doubt, use the document's model absolute tolerance.</param>
+    /// <returns>True on success.</returns>
+    public static bool RepairBrep(Brep brep, double tolerance)
+    {
+      var ptr_brep = Runtime.Interop.NativeGeometryNonConstPointer(brep);
+      return UnsafeNativeMethods.RHC_RhinoRepairBrep(ptr_brep, tolerance);
     }
 
   }

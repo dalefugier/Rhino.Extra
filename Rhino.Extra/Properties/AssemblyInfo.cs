@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("x64")]
 [assembly: AssemblyCompany("Robert McNeel & Associates")]
 [assembly: AssemblyProduct("RhinoWorksession")]
-[assembly: AssemblyCopyright("Copyright © 2016, Robert McNeel & Associates")]
+[assembly: AssemblyCopyright("Copyright © 2016-18, Robert McNeel & Associates")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

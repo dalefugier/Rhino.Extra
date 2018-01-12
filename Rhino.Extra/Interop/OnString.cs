@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Rhino.Extra
+namespace Rhino.Extra.Interop
 {
   /// <summary>
   /// Internal class used to help marshall openNURBS string class.

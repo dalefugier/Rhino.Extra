@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rhino.Extra
+namespace Rhino.Extra.Interop
 {
   /// <summary>
   /// Internal class used to help marshall openNURBS array class.

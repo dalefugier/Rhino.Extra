@@ -14,6 +14,7 @@
     <ProjectGuid>{50289133-3D43-4031-B217-1AD044612C6F}</ProjectGuid>
     <RootNamespace>RhinoExtraLib</RootNamespace>
     <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
