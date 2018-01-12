@@ -1,5 +1,5 @@
 # Rhino.Extra for RhinoCommon
-Extra stuff that didn't make it into RhinoCommon.
+Extra stuff that didn't make it into RhinoCommon for Rhino 5.
 
 For more information on compiling and installing, go to [RhinoCommon on GIT](https://github.com/mcneel/rhinocommon)
 
